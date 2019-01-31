@@ -1,0 +1,44 @@
+body {
+    font-size: 1rem;
+    font-family: $primary-font-family;
+    color: $primary-color-2;
+}
+
+.header-title {
+    font-size: $large-heading-font-size;
+    color: $accent-color-3;
+    font-weight: bold;
+    // 58px / 20px
+    line-height: 2.9rem;
+    // 6.7px / 20pxs
+    letter-spacing: 0.335rem;
+    text-transform: lowercase;
+}
+
+.title {
+    // 111.2px / 20px
+    font-family: $secondary-font-family;
+    font-size: 5.26rem;
+    color: $accent-color;
+    text-transform: capitalize;
+}
+
+
+.logo {
+    font-family: $secondary-font-family;
+    // 34.6px / 20px
+    font-size: 1.73rem;
+    color: $primary-color;
+}
+
+.navigation-link {
+    color: $secondary-color-2;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+    }
+
+}

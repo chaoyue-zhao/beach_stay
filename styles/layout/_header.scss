@@ -1,0 +1,41 @@
+header {
+    background: url('../assets/home-image-1.jpg');
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__logo {
+        flex-basis: 20%;
+    }
+
+    &__navigation {
+        flex-basis: 40%;
+    }
+
+    &__navigation-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__navigation-item {
+        flex: 1;
+    }
+}
+
+.header-title {
+
+    .title {
+        display: block;
+        
+    }
+}
