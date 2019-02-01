@@ -37,8 +37,11 @@ header {
 .header-title {
     margin: auto;
     transform: translateX(20%);
+    
     .title {
         display: block;
+        animation: swing 2s ease;
+        transform-origin: top center;
     }
 }
 

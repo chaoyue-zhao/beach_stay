@@ -1,79 +1,102 @@
 body {
-    font-size: 1rem;
-    font-family: $primary-font-family;
-    color: $primary-color-2;
+  font-size: 1rem;
+  font-family: $primary-font-family;
+  color: $primary-color-2;
 }
 
 .header-title {
-    font-size: $large-heading-font-size;
-    color: $accent-color-3;
-    font-weight: bold;
-    // 58px / 20px
-    line-height: 2.9rem;
-    letter-spacing: 6.7px;
-    text-transform: lowercase;
+  font-size: $large-heading-font-size;
+  color: $accent-color-3;
+  font-weight: bold;
+  // 58px / 20px
+  line-height: 2.9rem;
+  letter-spacing: 6.7px;
+  text-transform: lowercase;
 }
 
 .title {
-    font-family: $secondary-font-family;
-    // 111.2px / 20px
-    font-size: 5.26rem;
-    color: $accent-color;
-    text-transform: capitalize;
+  font-family: $secondary-font-family;
+  // 111.2px / 20px
+  font-size: 5.26rem;
+  color: $accent-color;
+  text-transform: capitalize;
 }
 
 .heading {
-    font-family: $primary-font-family;
-    color: $accent-color;
-    font-weight: bold;
-    // 58px / 20px
-    line-height: 2.9rem;
-    margin: 0;
-    padding: 0;
+  font-family: $primary-font-family;
+  color: $accent-color;
+  font-weight: bold;
+  // 58px / 20px
+  line-height: 2.9rem;
+  margin: 0;
+  padding: 0;
 }
 
 .heading-primary {
-    // 87px / 20px
-    font-size: 4.35rem;
-    letter-spacing: 9px;
+  // 87px / 20px
+  font-size: 4.35rem;
+  letter-spacing: 9px;
 }
 
 .heading-secondary {
-    // 35px / 20px
-    font-size: 1.75rem;
-    letter-spacing: 3.8px;
+  // 35px / 20px
+  font-size: 1.75rem;
+  letter-spacing: 3.8px;
+
+  &--accent {
+    color: $accent-color-3;
+    text-transform: capitalize;
+  }
+}
+
+.heading-tertiary {
+    // 30px / 20px
+    font-size: 1.5rem;
+    letter-spacing: 3.2px;
 
     &--accent {
-        color: $accent-color-3;
-        text-transform: capitalize;
+    color: $accent-color-3;
+
+    span {
+      text-transform: capitalize;
     }
+  }
 }
 
 .paragraph {
-    font-family: $primary-font-family;
-    font-size: 1rem;
-    color: $primary-color-2;
-    // 32px / 20px 
-    line-height: 1.6rem;
-    letter-spacing: 2px; 
-    margin: 0;
-    padding: 0;
+  font-family: $primary-font-family;
+  font-size: 1rem;
+  color: $primary-color-2;
+  // 32px / 20px
+  line-height: 1.6rem;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-    font-family: $secondary-font-family;
-    // 34.6px / 20px
-    font-size: 1.73rem;
-    color: $primary-color;
+  font-family: $secondary-font-family;
+  // 34.6px / 20px
+  font-size: 1.73rem;
+  color: $primary-color;
 }
 
 .navigation-link {
-    color: $secondary-color-2;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: $secondary-color-2;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    &:hover {
-        color: $primary-color;
-    }
+  @include hover;
+}
+
+.icon {
+  font-size: 1.2em;
+  color: #fafffe;
+  background: #50e3c2;
+  padding: 8px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
 }
