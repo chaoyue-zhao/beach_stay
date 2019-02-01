@@ -1,10 +1,15 @@
 //For the lovely people who are grading this, this style folder is following the 7-1 code architecture. In my humble opinion, it should be the preferred way to organize .scss partials. Link: https://sass-guidelin.es/#the-7-1-pattern.
 
+@import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/setup";
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/button";
+
 @import "layout/header";
+
+@import "pages/home";
 

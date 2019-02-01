@@ -1,0 +1,45 @@
+.feature .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.feature {
+    @include section-style($secondary-color-2);
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        flex: 1 1 60%;
+    }
+
+    &__image-box {
+        flex: 0 0 auto;
+    }
+    
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        @include box-shadow;
+    }
+}
+
+.gallery .wrapper {
+    display: flex;
+}
+
+.gallery {
+    @include section-style($accent-color-2);
+
+    &__image {
+        width: calc((100% - 4rem)/ 3; 
+    }
+
+    &__image:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+
+

@@ -10,19 +10,55 @@ body {
     font-weight: bold;
     // 58px / 20px
     line-height: 2.9rem;
-    // 6.7px / 20pxs
-    letter-spacing: 0.335rem;
+    letter-spacing: 6.7px;
     text-transform: lowercase;
 }
 
 .title {
-    // 111.2px / 20px
     font-family: $secondary-font-family;
+    // 111.2px / 20px
     font-size: 5.26rem;
     color: $accent-color;
     text-transform: capitalize;
 }
 
+.heading {
+    font-family: $primary-font-family;
+    color: $accent-color;
+    font-weight: bold;
+    // 58px / 20px
+    line-height: 2.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-primary {
+    // 87px / 20px
+    font-size: 4.35rem;
+    letter-spacing: 9px;
+}
+
+.heading-secondary {
+    // 35px / 20px
+    font-size: 1.75rem;
+    letter-spacing: 3.8px;
+
+    &--accent {
+        color: $accent-color-3;
+        text-transform: capitalize;
+    }
+}
+
+.paragraph {
+    font-family: $primary-font-family;
+    font-size: 1rem;
+    color: $primary-color-2;
+    // 32px / 20px 
+    line-height: 1.6rem;
+    letter-spacing: 2px; 
+    margin: 0;
+    padding: 0;
+}
 
 .logo {
     font-family: $secondary-font-family;
@@ -40,5 +76,4 @@ body {
     &:hover {
         color: $primary-color;
     }
-
 }

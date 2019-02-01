@@ -1,0 +1,28 @@
+.button {
+    font-family: $secondary-font-family;
+    font-size: 1rem;
+    color: $secondary-color-2;
+    background: $accent-color;
+    // 32px / 20px
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid transparent;
+    animation: all .2s;
+    width: 12rem;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        background: $secondary-color-2;
+        border: 2px solid $accent-color;
+        transform: translateY(-2px)
+    }
+
+    //:active exists in keyboard. 
+    &:active {
+        transform: translateY(0px)
+    }
+}
