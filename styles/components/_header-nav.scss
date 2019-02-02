@@ -1,0 +1,25 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__logo {
+        flex: 1 1 20%;
+    }
+
+    &__navigation {
+        flex: 1 0 10%;
+    }
+
+    &__navigation-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__navigation-item {
+        flex: 1;
+    }
+}

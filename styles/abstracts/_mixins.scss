@@ -1,11 +1,46 @@
+// pseudo elements SASS mixins from https://engageinteractive.co.uk/blog/top-10-scss-mixins
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+//vertical centing SASS mixins from https://www.developerdrive.com/2018/05/10-best-sass-mixins-for-web-developers/
+
+@mixin vertical-center {
+   position: relative;
+   top: 50%;
+   -ms-transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+//absolute positioning SASS mixins from https://www.developerdrive.com/2018/05/10-best-sass-mixins-for-web-developers/
+
+@mixin abs-position ($top, $right, $bottom, $left) {
+   position: absolute; 
+   top: $top;
+   right: $right;
+   bottom: $bottom;
+   left: $left;
+}
+
+@mixin vertical-flex-left {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 @mixin section-style ($background-color) {
     background: $background-color;
     padding: 5% 0;
     margin: 0 auto; 
 }
 
-@mixin box-shadow {
-    box-shadow: -20px 20px $primary-color;
+@mixin box-shadow ($x, $y) {
+    box-shadow: $x $y $primary-color;
 }
 
 @mixin outline {

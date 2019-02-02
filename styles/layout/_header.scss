@@ -1,5 +1,5 @@
 header {
-    background: url('../assets/home-image-1.jpg');
+    background: url(../assets/home-image-1.jpg);
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -8,35 +8,17 @@ header {
     flex-direction: column;
 }
 
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-
-    &__logo {
-        flex: 1 1 20%;
-    }
-
-    &__navigation {
-        flex: 1 0 10%;
-    }
-
-    &__navigation-list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    &__navigation-item {
-        flex: 1;
-    }
+header::before {
+    @include pseudo;
+    background: url(../assets/header-box.jpg);
+    background-size: cover;
+    background-position: center center;
+    @include abs-position(35%, 60%, -15%, 0)
 }
 
 .header-title {
     margin: auto;
-    transform: translateX(20%);
+    transform: translateX(15%);
     
     .title {
         display: block;
@@ -44,4 +26,6 @@ header {
         transform-origin: top center;
     }
 }
+
+
 

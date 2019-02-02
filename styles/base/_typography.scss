@@ -72,6 +72,10 @@ body {
   letter-spacing: 2px;
   margin: 0;
   padding: 0;
+
+  &--accent {
+    color: $secondary-color-2;
+  }
 }
 
 .logo {
@@ -90,13 +94,4 @@ body {
   @include hover;
 }
 
-.icon {
-  font-size: 1.2em;
-  color: #fafffe;
-  background: #50e3c2;
-  padding: 8px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  text-align: center;
-}
+
