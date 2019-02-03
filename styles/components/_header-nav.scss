@@ -12,9 +12,7 @@
     }
 
     &__navigation-list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        @include list;
         display: flex;
         justify-content: space-around;
     }

@@ -65,7 +65,13 @@ body {
     span {
       text-transform: capitalize;
     }
-  }
+    }
+
+    &--accent-2 {
+      color: $primary-color-2;
+      letter-spacing: 1px;
+    }
+
 }
 
 .subtitle {
@@ -88,6 +94,7 @@ body {
   font-size: 1rem;
   color: $primary-color-2;
   // 32px / 20px
+  font-weight: normal;
   line-height: 1.6rem;
   letter-spacing: 2px;
   margin: 0;
@@ -97,8 +104,17 @@ body {
     color: $secondary-color-2;
   }
 
+  &--accent-2 {
+    color: $accent-color;
+    font-weight: bold;
+  }
+
   &--light {
     font-weight: 300;
+  }
+
+  span {
+    text-transform: capitalize;
   }
 
 }

@@ -14,20 +14,52 @@ main {
 }
 
 .blog-article {
-    width: 55%;
+    float: left;
+    width: 60%;
+    margin-right: 10%;
+    border: 2px solid transparent;
+
     
     
     .article {
         border: 5px solid $primary-color;
-        margin-top: -7rem;
+        margin-top: -6.5rem;
+        z-index: 10;
 
         &__image {
             width: 100%;
-            @include box-shadow (20px, 20px)
+            @include box-shadow (20px, 20px);
+            @include outline;
         }
     }
 
-    .contact-form {
-        @include box-shadow (0, 0)
+    .comment {
+        
+        display: flex;
+        align-items: flex-start;
+
+        &__image-box {
+            margin-right: 2rem;
+        }
+    }
+    
+}
+
+.more-info {
+    width: 30%;
+    float: right;
+
+    &__image {
+        width: 100%;
+        @include outline;
+    }
+
+    &__list {
+        color: $primary-color;       
+    }
+
+    &__link {
+        text-decoration: none;
+        @include hover;
     }
 }

@@ -26,6 +26,12 @@
    left: $left;
 }
 
+@mixin list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 @mixin vertical-flex-left {
     display: flex;
     flex-direction: column; 
