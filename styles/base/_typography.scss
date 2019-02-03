@@ -35,7 +35,13 @@ body {
 .heading-primary {
   // 87px / 20px
   font-size: 4.35rem;
+  color: $secondary-color-2;
+
   letter-spacing: 9px;
+   
+  span {
+    text-transform: capitalize;
+  }
 }
 
 .heading-secondary {
@@ -45,7 +51,6 @@ body {
 
   &--accent {
     color: $accent-color-3;
-    text-transform: capitalize;
   }
 }
 
@@ -63,6 +68,21 @@ body {
   }
 }
 
+.subtitle {
+  font-family: $primary-font-family;
+  color: $accent-color;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  font-style: italic;
+
+  span {
+    font-weight: normal;
+    font-style: normal;
+    margin-left: 5px;
+  }
+}
+
 .paragraph {
   font-family: $primary-font-family;
   font-size: 1rem;
@@ -76,6 +96,11 @@ body {
   &--accent {
     color: $secondary-color-2;
   }
+
+  &--light {
+    font-weight: 300;
+  }
+
 }
 
 .logo {

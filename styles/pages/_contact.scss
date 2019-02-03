@@ -1,0 +1,29 @@
+.contact-header {
+    background: url(../assets/contact-image-1.jpg);
+    height: 65vh;
+    background-position: bottom center; 
+    background-size: cover;
+
+    &__title {
+    margin-top: 9rem;  
+    }
+}
+
+.contact-container {
+    @include section-style($secondary-color-2);
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contact-form-container {
+    width: 70%;
+    margin-top: -8rem;
+    z-index: 10; 
+}
+
+.social-media {
+    width: 20%;
+}

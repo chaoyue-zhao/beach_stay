@@ -71,6 +71,7 @@
 
     img {
         width: 100%;
+        @include outline;
     }
 
     &__container:first-of-type {

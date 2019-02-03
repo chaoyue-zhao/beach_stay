@@ -1,0 +1,29 @@
+
+.social-media {
+    margin-top: 5rem;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    &__link {
+        color: $primary-color-2;
+        @include hover;
+    }
+
+    .paragraph {
+        @include hover;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}

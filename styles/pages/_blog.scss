@@ -1,0 +1,33 @@
+.blog-header {
+    background: url(../assets/blog-image-1.jpg);
+    height: 65vh;
+    background-position: bottom center; 
+    background-size: cover;
+
+    &__title {
+    margin-top: 9rem;  
+    }
+}
+
+main {
+    background: $secondary-color-2;
+}
+
+.blog-article {
+    width: 55%;
+    
+    
+    .article {
+        border: 5px solid $primary-color;
+        margin-top: -7rem;
+
+        &__image {
+            width: 100%;
+            @include box-shadow (20px, 20px)
+        }
+    }
+
+    .contact-form {
+        @include box-shadow (0, 0)
+    }
+}
