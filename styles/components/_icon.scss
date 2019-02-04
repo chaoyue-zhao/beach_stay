@@ -1,9 +1,8 @@
 // THE FOLLOWING CODES ARE ADAOPTED FROM FONT AWESOME WEBSITE RE: USING FONT AWESOME AS PSEUDO ELEMENTS. CREDIT ALSO TO DUSTIN BRADLEY FOR SHARING THIS IDEAS WITH ME. I WAS ABOUT TO PUT A FLEXBOX INSIDE A FLEXBOX TO ACHIEVE THIS.
 .icon {
     position: relative;
-}
 
-.icon::before {
+    &:before {
     @include pseudo;
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900; 
@@ -23,6 +22,19 @@
     text-align: center;
     @include abs-position(0,0,0,-4rem);
 }
+
+    &--2 {
+
+        &::before {
+            font-size: 2rem;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            @include abs-position (0,0,0,-5rem);
+        }
+    }
+}
+
 
 .house::before {
     content: "\f015";

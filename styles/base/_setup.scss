@@ -12,4 +12,12 @@ html {
 	max-width: 1600px;
 	width: 80%;
 	margin: 0 auto;
+
+	@include media (1000px) {
+		width: 85%;
+	}
+
+	@include media (800px) {
+		width: 90%;
+	}
 }

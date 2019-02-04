@@ -17,10 +17,7 @@ main {
     float: left;
     width: 60%;
     margin-right: 10%;
-    border: 2px solid transparent;
-
-    
-    
+ 
     .article {
         border: 5px solid $primary-color;
         margin-top: -6.5rem;
@@ -60,6 +57,6 @@ main {
 
     &__link {
         text-decoration: none;
-        @include hover;
+        @include hover ($primary-color);
     }
 }

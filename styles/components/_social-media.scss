@@ -13,11 +13,11 @@
 
     &__link {
         color: $primary-color-2;
-        @include hover;
+        @include hover ($primary-color);
     }
 
     .paragraph {
-        @include hover;
+        @include hover ($primary-color);
     }
 
     span {

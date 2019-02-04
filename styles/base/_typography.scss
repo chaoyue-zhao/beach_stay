@@ -12,6 +12,23 @@ body {
   line-height: 2.9rem;
   letter-spacing: 6.7px;
   text-transform: lowercase;
+
+  @include media (1000px) {
+    font-size: $medium-heading-font-size;
+    line-height: 2rem;
+  }
+
+  @include media (700px) {
+    line-height: 1.5rem;
+  }
+
+  @include media (550px) {
+    line-height: 1rem;
+  }
+
+  @include media (400px) {
+    line-height: 0.8rem;
+  }
 }
 
 .title {
@@ -20,6 +37,22 @@ body {
   font-size: 5.26rem;
   color: $accent-color;
   text-transform: capitalize;
+
+  @include media (1000px) {
+    font-size: 4rem;
+  }
+
+  @include media (700px) {
+    font-size: 3rem;
+  }
+
+  @include media (550px) {
+    font-size: 2rem;
+  }
+
+  @include media (400px) {
+    font-size: 1.5rem;
+  }
 }
 
 .heading {
@@ -36,7 +69,6 @@ body {
   // 87px / 20px
   font-size: 4.35rem;
   color: $secondary-color-2;
-
   letter-spacing: 9px;
    
   span {
@@ -132,7 +164,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 
-  @include hover;
+  @include hover ($primary-color);
 }
 
 

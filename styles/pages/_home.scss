@@ -1,120 +1,185 @@
 .feature .wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .feature {
-    @include section-style($secondary-color-2);
-    padding-top: 15%;
+  @include section-style($secondary-color-2);
+  padding-top: 15%;
 
-    &__text-box {
-        @include vertical-flex-left;
-        padding-right: 10%;
-        flex: 1 1 60%;
-    }
+  @include media(1000px) {
+    padding-top: 5%;
 
-    &__image-box {
-        flex: 0 0 auto;
-        @include outline;
+    .wrapper {
+      @include vertical-flex-center;
     }
-    
-    &__image {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        @include box-shadow(-20px, 20px);
+  }
+
+  &__text-box {
+    @include vertical-flex-left;
+    padding-right: 10%;
+    flex: 1 1 60%;
+
+    @include media(1000px) {
+      @include vertical-flex-center;
+
+      .paragraph {
+        text-align: center;
+      }
     }
+  }
+
+  &__image-box {
+    flex: 0 0 auto;
+    @include outline;
+
+    @include media(1000px) {
+      order: -1;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    @include box-shadow(-20px, 20px);
+  }
 }
 
 .gallery {
-    @include section-style($accent-color-2);
+  @include section-style($accent-color-2);
 
-    &__image {
-        display: block;
-        width: 100%;
-        @include outline;
+  &__image {
+    display: block;
+    width: 100%;
+    @include outline;
+
+    @include media (1000px) {
+
+      &:last-of-type {
+        display: none;
+      }
     }
+  }
 }
 
 .gallery .wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .iconLinks {
-    @include section-style($secondary-color-2);
+  @include section-style($secondary-color-2);
 
-    &__container {
-        @include vertical-flex-left;
-    }
-}
-
-.iconLinks .wrapper {
+  &__list {
+    @include vertical-flex-left;
+    @include list;
     display: grid;
     grid-column-gap: 5rem;
     grid-row-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__heading {
+    @include hover($primary-color);
+  }
+
+  &__paragraph {
+    @include hover($primary-color);
+  }
 }
 
 .info-card {
-    @include section-style($accent-color-2);
-    
-    &__container {
-        display: flex;
-        width: 45%;
+  @include section-style($accent-color-2);
+
+  @include media(1000px) {
+    @include vertical-flex-center;
+  }
+
+  &__container {
+    display: flex;
+    width: 45%;
+
+    @include media(1000px) {
+      width: 100%;
+    }
+  }
+
+  &__text-container {
+    margin: 10% 0;
+  }
+
+  img {
+    width: 100%;
+    @include outline;
+  }
+
+  &__container:first-of-type {
+    float: right;
+    flex-direction: column-reverse;
+    margin-bottom: -6rem;
+
+    @include media(1000px) {
+      @include vertical-flex-center;
+      float: none;
+      margin-bottom: 0;
     }
 
-    &__text-container {
-        margin: 10% 0;
+    .info-card__text-container {
+      padding-right: 20%;
+
+      @include media(1000px) {
+        padding: 0;
+        text-align: center;
+      }
     }
 
     img {
-        width: 100%;
-        @include outline;
+      @include box-shadow(-20px, 20px);
+    }
+  }
+
+  &__container:last-of-type {
+    float: left;
+    flex-direction: column;
+    margin-top: -6rem;
+
+    @include media(1000px) {
+      @include vertical-flex-center;
+      float: none;
+      margin-top: 0;
     }
 
-    &__container:first-of-type {
-        float: right; 
-        flex-direction: column-reverse;
-        margin-bottom: -6rem;
+    .info-card__text-container {
+      text-align: right;
+      padding-left: 20%;
 
-
-        .info-card__text-container {
-            padding-right: 20%;
-        }
-
-        img {
-            @include box-shadow(-20px, 20px);
-        }
+      @include media(1000px) {
+        padding: 0;
+        text-align: center;
+      }
     }
 
-    &__container:last-of-type {
-        float: left; 
-        flex-direction: column;
-        margin-top: -6rem;
-
-        .info-card__text-container {
-            text-align: right;
-            padding-left: 20%;
-        }
-        
-        img {
-            @include box-shadow(20px, 20px);
-        }
-    } 
+    img {
+      @include box-shadow(20px, 20px);
+    }
+  }
 }
 
 .full-image {
-    background-image: url(../assets/banner-image.jpg);
-    height: 50vh;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../assets/banner-image.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .free-trip {
-    @include section-style($secondary-color-2);
-    text-align: center;
+  @include section-style($secondary-color-2);
+  text-align: center;
 }
-
-

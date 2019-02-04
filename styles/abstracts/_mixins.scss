@@ -39,6 +39,13 @@
     align-items: flex-start;
 }
 
+@mixin vertical-flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin section-style ($background-color) {
     background: $background-color;
     padding: 5% 0;
@@ -59,8 +66,17 @@
     }
 }
 
-@mixin hover {
+@mixin hover ($color){
     &:hover {
-        color: $primary-color;
+        color: $color;
+    }
+}
+
+// MEDIA QUERIES MIXINS 
+// adopted from this blogpost https://davidwalsh.name/write-media-queries-sass
+
+@mixin media ($screen-size) {
+    @media (max-width: $screen-size) {
+        @content;
     }
 }

@@ -21,6 +21,44 @@
     <a href="#main" class="skip-link paragraph paragraph--accent"
       >Skip to main content</a
     >
+
+    <!-- MOBILE NAV STARTS HERE -->
+    <div class="mobile-nav">
+      <label for="checkbox" class="mobile-nav__button">
+        <span class="mobile-nav__icon">&nbsp;</span>
+      </label>
+      
+      <input type="checkbox" class="mobile-nav__checkbox" id="checkbox">
+
+      <div class="mobile-nav__background">
+        &nbsp;
+      </div>
+
+      <nav class="mobile-nav__navigation">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="index.html" class="mobile-nav__link heading heading-secondary icon icon--2 house">
+              Home
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link heading heading-secondary icon icon--2 users">
+              About
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="blog.html" class="mobile-nav__link heading heading-secondary icon icon--2 file">
+              Blog
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="contact.html" class="mobile-nav__link heading heading-secondary icon icon--2 phone">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- HEADER STARTS HERE -->
     <header class="header">
       <div class="wrapper">
@@ -29,7 +67,7 @@
           <nav class="header-nav__navigation">
             <ul class="header-nav__navigation-list">
               <li class=" header-nav__navigation-item">
-                <a href="#" class="navigation-link">Home</a>
+                <a href="index.html" class="navigation-link">Home</a>
               </li>
               <li class=" header-nav__navigation-item">
                 <a href="#" class="navigation-link">About</a>
@@ -104,54 +142,56 @@
       <!-- ICON INTERNAL LINKS SECTION STARTS HERE-->
       <section class="iconLinks">
         <div class="wrapper">
-          <div class="iconLinks__container">
-            <h3
-              class="iconLinks__heading heading heading-tertiary--accent icon house"
-            >
-              Beach houses
-            </h3>
-            <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-              quam repellendus, eaque laudantium, alias minima laboriosam?
-            </p>
-          </div>
-          <div class="iconLinks__container">
-            <h3
-              class="iconLinks__heading heading heading-tertiary--accent icon users"
-            >
-              Community
-            </h3>
-            <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-              quam repellendus, eaque laudantium, alias minima laboriosam?
-            </p>
-          </div>
-          <div class="iconLinks__container">
-            <h3
-              class="iconLinks__heading heading heading-tertiary--accent icon file"
-            >
-              Blog
-            </h3>
-            <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-              quam repellendus, eaque laudantium, alias minima laboriosam?
-            </p>
-          </div>
-          <div class="iconLinks__container">
-            <h3
-              class="iconLinks__heading heading heading-tertiary--accent icon phone"
-            >
-              Get in <span>touch</span>
-            </h3>
-            <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-              quam repellendus, eaque laudantium, alias minima laboriosam?
-            </p>
-          </div>
+          <ul class="iconLinks__list">
+            <li class="iconLinks__item">
+              <a href="index.html" class="iconLinks__link">
+                <h3 class="iconLinks__heading heading heading-tertiary--accent icon house">
+                  Beach houses
+                </h3>
+                <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
+                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                </p>
+              </a>
+            </li>
+            <li class="iconLinks__item">
+              <a href="#" class="iconLinks__link">
+                <h3 class="iconLinks__heading heading heading-tertiary--accent icon users">
+                  Community
+                </h3>
+                <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
+                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                </p>
+              </a>
+            </li>
+            <li class="iconLinks__item">
+              <a href="blog.html" class="iconLinks__link">
+                <h3 class="iconLinks__heading heading heading-tertiary--accent icon file">
+                  Blog
+                </h3>
+                <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
+                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                </p>            
+              </a>
+            </li>
+            <li class="iconLinks__item">
+              <a href="contact.html" class="iconLinks__link">
+                <h3 class="iconLinks__heading heading heading-tertiary--accent icon phone">
+                  Get in <span>touch</span>
+                </h3>
+                <p class="paragraph iconLinks__paragraph u-margin-bottom-medium">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
+                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- INFO CARD SECTION STARTS HERE -->
