@@ -13,6 +13,42 @@
 </head>
 <body>
     <a href="#main" class="skip-link paragraph paragraph--accent">Skip to main content</a>
+    <div class="mobile-nav">
+        <input type="checkbox" class="mobile-nav__checkbox" id="checkbox">
+    
+        <label for="checkbox" class="mobile-nav__button">
+            <span class="mobile-nav__icon">&nbsp;</span>
+        </label>
+    
+        <div class="mobile-nav__background">
+            &nbsp;
+        </div>
+    
+        <nav class="mobile-nav__navigation">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="index.html" class="mobile-nav__link heading heading-secondary icon icon--2 house">
+                        Home
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#" class="mobile-nav__link heading heading-secondary icon icon--2 users">
+                        About
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="blog.html" class="mobile-nav__link heading heading-secondary icon icon--2 file">
+                        Blog
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="contact.html" class="mobile-nav__link heading heading-secondary icon icon--2 phone">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- HEADER STARTS HERE -->
     <header class="blog-header">
         <div class="wrapper">
@@ -44,39 +80,39 @@
     <main class="clearfix">
         <section class="blog-article">
             <article class="article">
-                <img src="assets/post-image.jpg" alt="a walkup to a baby blue and wooden beachhouse with lights on in the window" class="article__image u-margin-bottom-small">
+                <img src="assets/post-image.jpg" alt="a walkup to a baby blue and wooden beachhouse with lights on in the window" class="article__image">
                 <div class="wrapper">
                     <h2 class="article__title heading heading-secondary heading-secondary--accent">
                         Five days of ocean seas
                     </h2>
-                    <h3 class="subtitle u-margin-bottom-small">
+                    <h3 class="article__title subtitle">
                         Monday January 21th, 2019 by <span> Bora</span>
                     </h3>
-                    <p class="paragraph u-margin-bottom-small">
+                    <p class="article__paragraph paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, blanditiis sequi incidunt provident reprehenderit expedita? Nihil provident praesentium iusto alias vel autem assumenda, fugiat itaque. Voluptatum, nemo alias porro et veritatis rem ab harum saepe earum.
                     </p>
-                    <p class="paragraph u-margin-bottom-small">
+                    <p class="article__paragraph paragraph">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quidem consectetur molestiae. Exercitationem, blanditiis delectus! Perferendis facilis enim molestias magni obcaecati in corrupti dolorem error a quae natus totam, quia omnis excepturi ipsa amet, quos minima hic? Debitis, nisi iusto.
                     </p>
-                    <p class="paragraph u-margin-bottom-small">
+                    <p class="article__paragraph paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vitae fugiat nostrum voluptatem natus numquam accusamus incidunt sit facere ea aspernatur provident ullam iure mollitia id porro odio, recusandae veniam iusto necessitatibus aperiam eius, esse nisi minima. Voluptatum rem voluptate similique sit, tempore nulla consequatur nam distinctio molestiae neque reprehenderit expedita sequi, odit soluta ex. Nesciunt adipisci vitae nemo ad minima obcaecati sint quod, possimus repellendus nobis! A quia accusamus amet mollitia inventore! Sit, impedit? Aspernatur est necessitatibus odio corporis?
                     </p>
-                    <p class="paragraph u-margin-bottom-small">
+                    <p class="article__paragraph paragraph">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem maiores ullam labore, eveniet tenetur architecto voluptatum nobis odit magni eligendi provident nesciunt ex quisquam aspernatur. Nam aliquam qui eum nihil?
                     </p>
                 </article>
             </div>
             <div class="comments">
                 <div class="wrapper">
-                    <h2 class="comments__title heading heading-tertiary heading-tertiary--accent-2 u-margin-bottom-medium u-margin-top-medium">
+                    <h2 class="comments__title heading heading-tertiary heading-tertiary--accent-2">
                         Comments: 
                     </h2>
-                    <div class="comment u-margin-bottom-big">
+                    <div class="comment">
                         <div class="comment__image-box">
                             <img src="assets/comment-image.jpg" alt="headshot of Reyansh smiling towards the camera wearing a dark jean jacket" class="comment__image">
                         </div>
                         <div class="comment__text-box">
-                            <h3 class="comment__title paragraph paragraph--accent-2 u-margin-bottom-small">
+                            <h3 class="comment__title paragraph paragraph--accent-2">
                                 Tuesday October 9th, 2019 by Reyansh
                             </h3>
                             <p class="paragraph">
@@ -90,7 +126,7 @@
                                 class="comment__image">
                         </div>
                         <div class="comment__text-box">
-                            <h3 class="comment__title paragraph paragraph--accent-2 u-margin-bottom-small">
+                            <h3 class="comment__title paragraph paragraph--accent-2">
                                 Wednesday October 10th, 2019 by Olivia
                             </h3>
                             <p class="paragraph">
@@ -103,34 +139,39 @@
             <!-- COMMENT FORM STARTS HERE -->
             <form action="#" class="form form--comment">
                 <label for="name" class="form__label visually-hidden">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" class="form__input paragraph u-margin-bottom-medium">
+                <input type="text" name="name" id="name" placeholder="Name" class="form__input paragraph">
             
                 <label for="email" class="form__label visually-hidden">Email address</label>
-                <input type="email" name="email" id="email" placeholder="Email address" class="form__input paragraph u-margin-bottom-medium">
+                <input type="email" name="email" id="email" placeholder="Email address" class="form__input paragraph">
             
                 <label for="comment" class="form__label visually-hidden">Comment</label>
-                <input type="textarea" name="comment" id="comment" placeholder="Comment" class="form__input paragraph u-margin-bottom-medium">
+                <input type="textarea" name="comment" id="comment" placeholder="Comment" class="form__input paragraph">
                 <button class="button">Post Comment</button>
             </form>
         </section>
         <!-- ASIDE STARTS HERE -->
         <aside class="more-info">
-            <img src="assets/sidebar-image.jpg" alt="" class="more-info__image">
-            <h3 class="more-info__title paragraph paragraph--accent-2 u-margin-bottom-small u-margin-top-small">
-                Our mission
-            </h3>
-            <p class="paragraph u-margin-bottom-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus tenetur ipsa eveniet beatae doloribus.
-            </p>
-            <h3 class="more-info__title paragraph paragraph--accent-2 u-margin-bottom-small">
-                Recent <span>posts</span>
-            </h3>
-            <ul class="more-info__list">
-                <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
-                <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
-                <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
-                <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
-            </ul>
+            <div class="more-info__mission">
+                <img src="assets/sidebar-image.jpg" alt="" class="more-info__image">
+                <h3 class="more-info__title paragraph paragraph--accent-2">
+                    Our mission
+                </h3>
+                <p class="more-info__paragraph paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatibus tenetur ipsa eveniet beatae doloribus.
+                </p>
+                <a href="#" class="more-info__button button">Find out more</a>
+            </div>
+            <div class="more-info__posts">
+                <h3 class="more-info__title paragraph paragraph--accent-2">
+                    Recent <span>posts</span>
+                </h3>
+                <ul class="more-info__list">
+                    <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="more-info__item"><a href="#" class="more-info__link paragraph">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+            </div>
         </aside>
     </main>
     <!-- FOOTER STARTS HERE -->

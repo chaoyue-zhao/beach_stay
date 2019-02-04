@@ -30,11 +30,10 @@
 
     @include media (1400px) {
         width: 60%;
-        @include abs-position(50%, 50%, -15%, 0);
+        @include abs-position(30%, 50%, -15%, 0)
     }
     @include media (1200px) {
         width: 50%;
-        @include abs-position(50%, 50%, -15%, 0);
     }
 
     @include media (1000px) {
@@ -43,7 +42,7 @@
 }
 
 .header-title {
-    margin: auto;
+    margin: auto;  
     transform: translateX(15%);
 
     @include media (1200px) {
@@ -54,6 +53,7 @@
         display: block;
         animation: swing 2s ease;
         transform-origin: top center;
+        margin-top: $small-margin;
     }
 }
 

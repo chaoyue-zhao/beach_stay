@@ -12,6 +12,44 @@
 </head>
 <body>
     <a href="#main" class="skip-link paragraph paragraph--accent">Skip to main content</a>
+
+    <!-- MOBILE NAV STARTS HERE -->
+    <div class="mobile-nav">
+        <input type="checkbox" class="mobile-nav__checkbox" id="checkbox">
+    
+        <label for="checkbox" class="mobile-nav__button">
+            <span class="mobile-nav__icon">&nbsp;</span>
+        </label>
+    
+        <div class="mobile-nav__background">
+            &nbsp;
+        </div>
+    
+        <nav class="mobile-nav__navigation">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                    <a href="index.html" class="mobile-nav__link heading heading-secondary icon icon--2 house">
+                        Home
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="#" class="mobile-nav__link heading heading-secondary icon icon--2 users">
+                        About
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="blog.html" class="mobile-nav__link heading heading-secondary icon icon--2 file">
+                        Blog
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="contact.html" class="mobile-nav__link heading heading-secondary icon icon--2 phone">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- HEADER STARTS HERE -->
     <header class="contact-header">
         <div class="wrapper">
@@ -46,50 +84,54 @@
                 <div class="contact-form-container">
                     <form action="#" class="form form--contact">
                         <label for="name" class="form__label visually-hidden">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Name" class="form__input paragraph u-margin-bottom-medium">
+                        <input type="text" name="name" id="name" placeholder="Name" class="form__input paragraph">
         
                         <label for="email" class="form__label visually-hidden">Email address</label>
-                        <input type="email" name="email" id="email" placeholder="Email address" class="form__input paragraph u-margin-bottom-medium">
+                        <input type="email" name="email" id="email" placeholder="Email address" class="form__input paragraph">
                         
                         <label for="message" class="form__label visually-hidden">Message</label>
-                        <input type="textarea" name="message" id="message" placeholder="Message" class="form__input paragraph u-margin-bottom-medium">
+                        <input type="textarea" name="message" id="message" placeholder="Message" class="form__input paragraph">
         
                         <button class="button">Submit</button>
                     </form>
                 </div>
                 <div class="social-media">
-                    <ul class="social-media__list u-margin-bottom-small">
-                        <li class="social-media__item"
-                            ><a href="#" class="social-media__link">
-                                <i class="fab fa-facebook-f social-media__icon" aria-lebel="go to facebook"></i>
-                            </a>
-                        </li>
-                        <li class="social-media__item"
-                            ><a href="#" class="social-media__link">
-                                <i class="fab fa-instagram social-media__icon" aira-label="go to instagram"></i>
-                            </a>
-                        </li>
-                        <li class="social-media__item"
-                            ><a href="#" class="social-media__link">
-                                <i class="fab fa-twitter social-media__icon" aria-label="go to twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-media__item"
-                            ><a href="#" class="social-media__link">
-                                <i class="fab fa-whatsapp social-media__icon" aria-label="go to what's app"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="paragraph u-margin-bottom-medium">
-                        info@email.com
-                    </p>
-                    <p class="paragragh paragraph--light">
-                        <span>123 - 456 - 7890</span>
-                        <span>123 Queen Street West,</span>
-                        <span>Unit 10</span>
-                        <span>Toronto, Ontario</span>
-                        <span>M5V2D5</span>                       
-                    </p>
+                    <div class="social-media__icons">
+                        <ul class="social-media__list">
+                            <li class="social-media__item"
+                                ><a href="#" class="social-media__link">
+                                    <i class="fab fa-facebook-f social-media__icon" aria-lebel="go to facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-media__item"
+                                ><a href="#" class="social-media__link">
+                                    <i class="fab fa-instagram social-media__icon" aira-label="go to instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-media__item"
+                                ><a href="#" class="social-media__link">
+                                    <i class="fab fa-twitter social-media__icon" aria-label="go to twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-media__item"
+                                ><a href="#" class="social-media__link">
+                                    <i class="fab fa-whatsapp social-media__icon" aria-label="go to what's app"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="paragraph">
+                            info@email.com
+                        </p>
+                    </div>
+                    <div class="social-media__address">
+                        <p class="paragragh paragraph--light">
+                            <span>123 - 456 - 7890</span>
+                            <span>123 Queen Street West,</span>
+                            <span>Unit 10</span>
+                            <span>Toronto, Ontario</span>
+                            <span>M5V2D5</span>                       
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

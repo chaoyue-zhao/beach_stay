@@ -70,6 +70,13 @@ body {
   font-size: 4.35rem;
   color: $secondary-color-2;
   letter-spacing: 9px;
+
+  @include media (1000px) {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    line-height: 4rem;
+
+  }
    
   span {
     text-transform: capitalize;

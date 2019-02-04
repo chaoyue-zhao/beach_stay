@@ -7,12 +7,17 @@
   @include section-style($secondary-color-2);
   padding-top: 15%;
 
+  &__title, &__paragraph, &__cta {
+    margin-bottom: $small-margin;
+  }
+
   @include media(1000px) {
     padding-top: 5%;
 
     .wrapper {
       @include vertical-flex-center;
     }
+
   }
 
   &__text-box {
@@ -22,6 +27,7 @@
 
     @include media(1000px) {
       @include vertical-flex-center;
+      padding-right: 0;
 
       .paragraph {
         text-align: center;
@@ -74,24 +80,36 @@
   @include section-style($secondary-color-2);
 
   &__list {
-    @include vertical-flex-left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     @include list;
-    display: grid;
-    grid-column-gap: 5rem;
-    grid-row-gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+  }
+
+  &__item {
+    width: 45%;
+
+    @include media(1000px) {
+      width: 90%;
+      margin-left: 10%;
+    }
+
+    @include media (600px) {
+      width: 80%;
+      margin-left: 20%;
+    }
   }
 
   &__link {
     text-decoration: none;
   }
 
-  &__heading {
+  &__heading, &__paragraph {
     @include hover($primary-color);
   }
 
   &__paragraph {
-    @include hover($primary-color);
+    margin-bottom: $medium-margin;
   }
 }
 
@@ -107,7 +125,7 @@
     width: 45%;
 
     @include media(1000px) {
-      width: 100%;
+      width: 90%;
     }
   }
 
@@ -118,6 +136,10 @@
   img {
     width: 100%;
     @include outline;
+  }
+
+  &__title, &__paragraph {
+    margin-bottom: $small-margin;
   }
 
   &__container:first-of-type {
@@ -182,4 +204,12 @@
 .free-trip {
   @include section-style($secondary-color-2);
   text-align: center;
+
+  &__title, &__paragraph{
+    margin-bottom: $small-margin;
+  }
+
+  &__button {
+    margin-bottom: $medium-margin;
+  }
 }

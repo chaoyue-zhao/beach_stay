@@ -1,11 +1,18 @@
 .contact-header {
     background: url(../assets/contact-image-1.jpg);
     height: 65vh;
+    min-height: 500px;
     background-position: bottom center; 
     background-size: cover;
 
     &__title {
     margin-top: 9rem;  
+
+    @include media (1000px) {
+        margin-top: 5rem;
+        height: 50vh;
+        min-height: 300px;
+    }
     }
 }
 
@@ -15,15 +22,54 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
+
+        @include media (1000px) {
+            @include vertical-flex-center;
+            width: 100%;
+        }
     }
 }
 
 .contact-form-container {
     width: 70%;
-    margin-top: -8rem;
-    z-index: 10; 
+    margin-top: -10%;
+    z-index: 5; 
+
+    @include media (1000px) {
+       margin-top: -15%;
+    }
+
+    @include media (600px) {
+        margin-top: -25%;
+    }
 }
 
 .social-media {
     width: 20%;
+
+    &__list {
+        margin-bottom: $small-margin;
+    }
+
+    &__icons p {
+        margin-bottom: $medium-margin;
+    }
+
+    @include media (1000px) {
+        width: 100%;
+        @include horizontal-flex-center;
+
+        &__icons, &__address {
+            width: 40%;
+            text-align: center;
+        }
+    }
+
+    @include media (600px) {
+        @include vertical-flex-center;
+        
+        &__icons, &__address {
+            width: 100%;
+        }
+    }
 }

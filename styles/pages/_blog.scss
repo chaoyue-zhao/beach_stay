@@ -1,62 +1,132 @@
 .blog-header {
-    background: url(../assets/blog-image-1.jpg);
-    height: 65vh;
-    background-position: bottom center; 
-    background-size: cover;
+  background: url(../assets/blog-image-1.jpg);
+  height: 65vh;
+  background-position: bottom center;
+  background-size: cover;
 
-    &__title {
-    margin-top: 9rem;  
-    }
+  &__title {
+    margin-top: 9rem;
+  }
 }
 
 main {
-    background: $secondary-color-2;
+  background: $secondary-color-2;
 }
 
 .blog-article {
-    float: left;
-    width: 60%;
-    margin-right: 10%;
- 
-    .article {
-        border: 5px solid $primary-color;
-        margin-top: -6.5rem;
-        z-index: 10;
+  float: left;
+  width: 60%;
+  margin-right: 10%;
 
-        &__image {
-            width: 100%;
-            @include box-shadow (20px, 20px);
-            @include outline;
-        }
+  @include media(1000px) {
+    float: none;
+    width: 100%;
+  }
+
+  .article {
+    border: 5px solid $primary-color;
+    margin-top: -6.5rem;
+    z-index: 10;
+
+    &__image {
+      width: 100%;
+      @include box-shadow(20px, 20px);
+      @include outline;
+
+      @include media(1000px) {
+        width: 80%;
+        margin: 0 10%;
+      }
     }
 
-    .comment {
-        
-        display: flex;
-        align-items: flex-start;
-
-        &__image-box {
-            margin-right: 2rem;
-        }
+    &__image,
+    &__title,
+    &__paragraph {
+      margin-bottom: $small-margin;
     }
-    
+  }
+
+  .comments {
+    &__title {
+      margin: $small-margin 0;
+    }
+  }
+
+  .comment {
+    margin-bottom: $large-margin;
+
+    display: flex;
+    align-items: flex-start;
+
+    @include media(600px) {
+      @include vertical-flex-center;
+    }
+
+    &__image-box {
+      margin-right: 2rem;
+      
+      @include media(600px) {
+        margin-bottom: $small-margin;
+      }
+    }
+
+    &__title {
+      margin-bottom: $small-margin;
+    }
+  }
 }
 
 .more-info {
-    width: 30%;
-    float: right;
+  width: 30%;
+  float: right;
+
+  @include media(1000px) {
+    float: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__mission {
+      width: 90%;
+      margin: 0 20%;
+      @include vertical-flex-center;
+      text-align: center;
+    }
 
     &__image {
-        width: 100%;
-        @include outline;
+      width: 50%;
     }
 
-    &__list {
-        color: $primary-color;       
+    &__posts {
+      width: 100%;
+      @include vertical-flex-center;
     }
+  }
 
-    &__link {
-        text-decoration: none;
-        @include hover ($primary-color);
-    }
+  &__title {
+    margin: $small-margin 0;
+  }
+
+  &__paragraph {
+    margin-bottom: $small-margin;
+  }
+
+  &__button {
+    margin-bottom: $medium-margin;
+  }
+
+  &__image {
+    width: 100%;
+    display: inline-block;
+    @include outline;
+  }
+
+  &__list {
+    color: $primary-color;
+  }
+
+  &__link {
+    text-decoration: none;
+    @include hover($primary-color);
+  }
 }
