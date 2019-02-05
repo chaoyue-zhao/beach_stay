@@ -24,12 +24,12 @@
 
     <!-- MOBILE NAV STARTS HERE -->
     <div class="mobile-nav">
-      <input type="checkbox" class="mobile-nav__checkbox" id="checkbox">
+      <input type="checkbox" class="mobile-nav__checkbox" id="checkbox" />
 
       <label for="checkbox" class="mobile-nav__button">
-        <span class="mobile-nav__icon">&nbsp;</span>
+        <span class="mobile-nav__icon" aria-label="click to open mobile nav" role="button">&nbsp;</span>
       </label>
-    
+
       <div class="mobile-nav__background">
         &nbsp;
       </div>
@@ -37,22 +37,34 @@
       <nav class="mobile-nav__navigation">
         <ul class="mobile-nav__list">
           <li class="mobile-nav__item">
-            <a href="index.html" class="mobile-nav__link heading heading-secondary icon icon--2 house">
+            <a
+              href="index.html"
+              class="mobile-nav__link heading heading-secondary icon icon--2 house"
+            >
               Home
             </a>
           </li>
           <li class="mobile-nav__item">
-            <a href="#" class="mobile-nav__link heading heading-secondary icon icon--2 users">
+            <a
+              href="#"
+              class="mobile-nav__link heading heading-secondary icon icon--2 users"
+            >
               About
             </a>
           </li>
           <li class="mobile-nav__item">
-            <a href="blog.html" class="mobile-nav__link heading heading-secondary icon icon--2 file">
+            <a
+              href="blog.html"
+              class="mobile-nav__link heading heading-secondary icon icon--2 file"
+            >
               Blog
             </a>
           </li>
           <li class="mobile-nav__item">
-            <a href="contact.html" class="mobile-nav__link heading heading-secondary icon icon--2 phone">
+            <a
+              href="contact.html"
+              class="mobile-nav__link heading heading-secondary icon icon--2 phone"
+            >
               Contact
             </a>
           </li>
@@ -61,26 +73,24 @@
     </div>
     <!-- HEADER STARTS HERE -->
     <header class="header">
-      <div class="wrapper">
-        <div class="header-nav">
-          <h2 class="header-nav__logo logo">Beachstays</h2>
-          <nav class="header-nav__navigation">
-            <ul class="header-nav__navigation-list">
-              <li class=" header-nav__navigation-item">
-                <a href="index.html" class="navigation-link">Home</a>
-              </li>
-              <li class=" header-nav__navigation-item">
-                <a href="#" class="navigation-link">About</a>
-              </li>
-              <li class=" header-nav__navigation-item">
-                <a href="blog.html" class="navigation-link">Blog</a>
-              </li>
-              <li class=" header-nav__navigation-item">
-                <a href="contact.html" class="navigation-link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="wrapper header-nav">
+        <h2 class="header-nav__logo logo">Beachstays</h2>
+        <nav class="header-nav__navigation">
+          <ul class="header-nav__navigation-list">
+            <li class=" header-nav__navigation-item">
+              <a href="index.html" class="navigation-link">Home</a>
+            </li>
+            <li class=" header-nav__navigation-item">
+              <a href="#" class="navigation-link">About</a>
+            </li>
+            <li class=" header-nav__navigation-item">
+              <a href="blog.html" class="navigation-link">Blog</a>
+            </li>
+            <li class=" header-nav__navigation-item">
+              <a href="contact.html" class="navigation-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <h1 class="header-title">
         Welcome to <span class="title">Beachstays</span>
@@ -106,9 +116,7 @@
               Tenetur in debitis, voluptatem nobis ipsam rem magnam. Id, odit
               et.
             </p>
-            <a href="#" class="feature__cta button"
-              >Find out more</a
-            >
+            <a href="#" class="feature__cta button">Find out more</a>
           </div>
           <div class="feature__image-box">
             <img
@@ -145,49 +153,61 @@
           <ul class="iconLinks__list">
             <li class="iconLinks__item">
               <a href="index.html" class="iconLinks__link">
-                <h3 class="iconLinks__heading heading heading-tertiary--accent icon house">
+                <h3
+                  class="iconLinks__heading heading heading-tertiary--accent icon house"
+                >
                   Beach houses
                 </h3>
                 <p class="paragraph iconLinks__paragraph">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet nulla ullam optio! Obcaecati rerum magni ut quo
+                  doloremque est quam repellendus, eaque laudantium, alias
+                  minima laboriosam?
                 </p>
               </a>
             </li>
             <li class="iconLinks__item">
               <a href="#" class="iconLinks__link">
-                <h3 class="iconLinks__heading heading heading-tertiary--accent icon users">
+                <h3
+                  class="iconLinks__heading heading heading-tertiary--accent icon users"
+                >
                   Community
                 </h3>
                 <p class="paragraph iconLinks__paragraph">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet nulla ullam optio! Obcaecati rerum magni ut quo
+                  doloremque est quam repellendus, eaque laudantium, alias
+                  minima laboriosam?
                 </p>
               </a>
             </li>
             <li class="iconLinks__item">
               <a href="blog.html" class="iconLinks__link">
-                <h3 class="iconLinks__heading heading heading-tertiary--accent icon file">
+                <h3
+                  class="iconLinks__heading heading heading-tertiary--accent icon file"
+                >
                   Blog
                 </h3>
                 <p class="paragraph iconLinks__paragraph">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-                  quam repellendus, eaque laudantium, alias minima laboriosam?
-                </p>            
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet nulla ullam optio! Obcaecati rerum magni ut quo
+                  doloremque est quam repellendus, eaque laudantium, alias
+                  minima laboriosam?
+                </p>
               </a>
             </li>
             <li class="iconLinks__item">
               <a href="contact.html" class="iconLinks__link">
-                <h3 class="iconLinks__heading heading heading-tertiary--accent icon phone">
+                <h3
+                  class="iconLinks__heading heading heading-tertiary--accent icon phone"
+                >
                   Get in <span>touch</span>
                 </h3>
                 <p class="paragraph iconLinks__paragraph">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                  nulla ullam optio! Obcaecati rerum magni ut quo doloremque est
-                  quam repellendus, eaque laudantium, alias minima laboriosam?
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet nulla ullam optio! Obcaecati rerum magni ut quo
+                  doloremque est quam repellendus, eaque laudantium, alias
+                  minima laboriosam?
                 </p>
               </a>
             </li>
@@ -205,9 +225,7 @@
             />
           </div>
           <div class="info-card__text-container">
-            <h2
-              class="info-card__title heading heading-secondary"
-            >
+            <h2 class="info-card__title heading heading-secondary">
               Plan ahead
             </h2>
             <p class="info-card__paragraph paragraph">
@@ -227,9 +245,7 @@
             />
           </div>
           <div class="info-card__text-container">
-            <h2
-              class="info-card__title heading heading-secondary"
-            >
+            <h2 class="info-card__title heading heading-secondary">
               New location
             </h2>
             <p class="info-card__paragraph paragraph">
@@ -241,10 +257,9 @@
           </div>
         </div>
       </section>
-      <!-- FULL IMAGE SECTION STARTS HERE -->
-      <section class="full-image">&nbsp;</section>
       <!-- FREE TRIP SECTION STATRS HERE -->
       <section class="free-trip">
+        <img src="assets/banner-image.jpg" alt="bird-eye view of a beachside with trees and straw houses" class="free-trip__image">
         <div class="wrapper">
           <h2
             class="free-trip__title heading heading-secondary heading-secondary--accent"

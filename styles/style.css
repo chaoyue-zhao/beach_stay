@@ -505,6 +505,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
+  display: inline-block;
   padding: 0.4rem 0.8rem;
   border: 2px solid transparent;
   -webkit-animation: all .2s;
@@ -1502,7 +1503,7 @@ main {
   outline: 20px solid #50e3c2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .gallery__image:last-of-type {
     display: none;
   }
@@ -1631,6 +1632,8 @@ main {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   margin-bottom: -6rem;
+  position: relative;
+  z-index: 3;
 }
 
 @media (max-width: 1000px) {
@@ -1715,21 +1718,24 @@ main {
           box-shadow: 20px 20px #50e3c2;
 }
 
-.full-image {
-  background-image: url(../assets/banner-image.jpg);
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-}
-
 .free-trip {
   background: #fafffe;
   padding: 5% 0;
   margin: 0 auto;
   text-align: center;
+  padding-top: 0;
 }
 
-.free-trip__title, .free-trip__paragraph {
+.free-trip__image {
+  height: 50vh;
+  width: 100vw;
+}
+
+.free-trip__title {
+  margin-top: 3rem;
+}
+
+.free-trip__paragraph {
   margin-bottom: 1rem;
 }
 

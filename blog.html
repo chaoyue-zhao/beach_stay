@@ -17,7 +17,7 @@
         <input type="checkbox" class="mobile-nav__checkbox" id="checkbox">
     
         <label for="checkbox" class="mobile-nav__button">
-            <span class="mobile-nav__icon">&nbsp;</span>
+            <span class="mobile-nav__icon" aria-label="click to open mobile nav" role="button">&nbsp;</span>
         </label>
     
         <div class="mobile-nav__background">
@@ -51,8 +51,7 @@
     </div>
     <!-- HEADER STARTS HERE -->
     <header class="blog-header">
-        <div class="wrapper">
-            <div class="header-nav">
+        <div class="wrapper header-nav">
                 <h2 class="header-nav__logo logo">Beachstays</h2>
                 <nav class="header-nav__navigation">
                     <ul class="header-nav__navigation-list">
@@ -74,7 +73,6 @@
             <h1 class="blog-header__title heading heading-primary">
                 Blog
             </h1>
-        </div>
     </header>
     <!-- MAIN STARTS HERE -->
     <main class="clearfix">
@@ -137,7 +135,7 @@
                 </div>
             </div>
             <!-- COMMENT FORM STARTS HERE -->
-            <form action="#" class="form form--comment">
+            <form action="#" class="form form--comment" name="comment-form">
                 <label for="name" class="form__label visually-hidden">Name</label>
                 <input type="text" name="name" id="name" placeholder="Name" class="form__input paragraph">
             
@@ -146,7 +144,7 @@
             
                 <label for="comment" class="form__label visually-hidden">Comment</label>
                 <input type="textarea" name="comment" id="comment" placeholder="Comment" class="form__input paragraph">
-                <button class="button">Post Comment</button>
+                <button class="button" type="submit">Post Comment</button>
             </form>
         </section>
         <!-- ASIDE STARTS HERE -->

@@ -61,7 +61,7 @@
     width: 100%;
     @include outline;
 
-    @include media (1000px) {
+    @include media (1200px) {
 
       &:last-of-type {
         display: none;
@@ -146,6 +146,8 @@
     float: right;
     flex-direction: column-reverse;
     margin-bottom: -6rem;
+    position: relative;
+    z-index: 3;
 
     @include media(1000px) {
       @include vertical-flex-center;
@@ -171,7 +173,8 @@
     float: left;
     flex-direction: column;
     margin-top: -6rem;
-
+    
+  
     @include media(1000px) {
       @include vertical-flex-center;
       float: none;
@@ -194,18 +197,21 @@
   }
 }
 
-.full-image {
-  background-image: url(../assets/banner-image.jpg);
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-}
-
 .free-trip {
   @include section-style($secondary-color-2);
   text-align: center;
+  padding-top: 0;
 
-  &__title, &__paragraph{
+  &__image {
+    height: 50vh;
+    width: 100vw;
+  }
+
+  &__title {
+    margin-top: $medium-margin;
+  }
+  
+  &__paragraph{
     margin-bottom: $small-margin;
   }
 
