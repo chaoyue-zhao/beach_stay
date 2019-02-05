@@ -163,6 +163,10 @@ body {
   // 34.6px / 20px
   font-size: 1.73rem;
   color: $primary-color;
+
+  @include media (600px) {
+    font-size: 1.5rem;
+  }
 }
 
 .navigation-link {
