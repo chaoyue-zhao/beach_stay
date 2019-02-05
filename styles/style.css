@@ -1136,6 +1136,7 @@ main {
 
 .blog-article .article__image, .blog-article .article__title, .blog-article .article__paragraph {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .blog-article .comments__title {
@@ -1218,16 +1219,18 @@ main {
   }
 }
 
-.more-info__title {
-  margin: 1rem 0;
-}
-
-.more-info__paragraph {
-  margin-bottom: 1rem;
+.more-info__title, .more-info__paragraph {
+  margin-top: 1rem;
 }
 
 .more-info__button {
   margin-bottom: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .more-info__button {
+    margin: 1rem 0;
+  }
 }
 
 .more-info__list {

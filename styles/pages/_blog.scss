@@ -44,6 +44,7 @@ main {
     &__title,
     &__paragraph {
       margin-bottom: $small-margin;
+      text-align: center;
     }
   }
 
@@ -96,16 +97,16 @@ main {
     }
   }
 
-  &__title {
-    margin: $small-margin 0;
-  }
-
-  &__paragraph {
-    margin-bottom: $small-margin;
+  &__title, &__paragraph  {
+    margin-top: $small-margin;
   }
 
   &__button {
     margin-bottom: $medium-margin;
+
+    @include media(1000px) {
+      margin: $small-margin 0;
+    }
   }
 
   &__list {
