@@ -1,12 +1,12 @@
 .blog-header {
   background: url(../assets/blog-image-1.jpg);
   height: 65vh;
+  height: 450px;
   background-position: bottom center;
   background-size: cover;
 
   &__title {
-    margin-top: 20vh; 
-    margin-left: 2rem;
+    margin-top: 12%;
   }
 }
 
@@ -65,7 +65,7 @@ main {
 
     &__image-box {
       margin-right: 2rem;
-      
+
       @include media(600px) {
         margin-bottom: $small-margin;
       }
@@ -82,25 +82,17 @@ main {
   float: right;
 
   @include media(1000px) {
+    text-align: center;
     float: none;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
-    &__mission {
-      width: 90%;
-      margin: 0 20%;
-      @include vertical-flex-center;
-      text-align: center;
-    }
+    padding: 0 10%;
+    @include vertical-flex-center;
 
     &__image {
-      width: 50%;
-    }
-
-    &__posts {
-      width: 100%;
-      @include vertical-flex-center;
+      width: 60%;
+      display: inline-block;
     }
   }
 
@@ -114,12 +106,6 @@ main {
 
   &__button {
     margin-bottom: $medium-margin;
-  }
-
-  &__image {
-    width: 100%;
-    display: inline-block;
-    @include outline;
   }
 
   &__list {

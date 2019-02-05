@@ -1,27 +1,26 @@
-
 .social-media {
-    margin-top: 5rem;
+  margin-top: 5rem;
 
-    &__list {
-        @include list;
-    }
+  &__list {
+    @include list;
+  }
 
-    &__item {
-        display: inline-block;
-        margin-right: 1rem;
-    }
+  &__item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
 
-    &__link {
-        color: $primary-color-2;
-        @include hover ($primary-color);
-    }
+  &__link {
+    color: $primary-color-2;
+    @include hover($primary-color);
+  }
 
-    .paragraph {
-        @include hover ($primary-color);
-    }
+  .paragraph {
+    @include hover($primary-color);
+  }
 
-    span {
-        display: block;
-        margin-bottom: 0.5rem;
-    }
+  span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }

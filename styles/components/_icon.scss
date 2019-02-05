@@ -1,11 +1,11 @@
 // THE FOLLOWING CODES ARE ADAOPTED FROM FONT AWESOME WEBSITE RE: USING FONT AWESOME AS PSEUDO ELEMENTS. CREDIT ALSO TO DUSTIN BRADLEY FOR SHARING THIS IDEAS WITH ME. I WAS ABOUT TO PUT A FLEXBOX INSIDE A FLEXBOX TO ACHIEVE THIS.
 .icon {
-    position: relative;
+  position: relative;
 
-    &:before {
+  &:before {
     @include pseudo;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -20,35 +20,39 @@
     line-height: 45px;
     border-radius: 50%;
     text-align: center;
-    @include abs-position(0,0,0,-4rem);
-}
+    @include abs-position(0, 0, 0, -4rem);
+  }
 
-    &--2 {
+  &--2 {
+    &::before {
+      font-size: 2rem;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      @include abs-position(0, 0, 0, -5rem);
 
-        &::before {
-            font-size: 2rem;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            @include abs-position (0,0,0,-5rem);
-        }
+      @include media(600px) {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
     }
+  }
 }
-
 
 .house::before {
-    content: "\f015";
+  content: "\f015";
 }
 
-.users::before { 
-    content: "\f0c0";
+.users::before {
+  content: "\f0c0";
 }
 
 .file::before {
-    content: "\f15b";
+  content: "\f15b";
 }
 
 .phone::before {
-    content: "\f095";
+  content: "\f095";
 }
-

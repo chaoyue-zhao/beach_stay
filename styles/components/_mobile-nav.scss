@@ -1,24 +1,23 @@
 // mobile navigation inspiried by this udemy course https://www.udemy.com/share/1000cABEodeF9aQXs=/. Lots of mdofications have been implemented but the basically CSS checkbox hack is learned from here
 
 .mobile-nav {
-
   &__checkbox {
     display: none;
   }
 
   &__icon {
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 0.8rem;
     position: relative;
 
     @include media(600px) {
-      margin-left: 0.8rem;
-      margin-top: 1.5rem;
+      margin-left: 0.5rem;
+      margin-top: 1rem;
     }
 
     &,
     &::before,
-    &::after { 
+    &::after {
       height: 3px;
       background: $secondary-color-2;
       display: inline-block;
@@ -37,10 +36,10 @@
     &::before,
     &::after {
       @include pseudo;
-      width: 2rem;
+      width: 1.5rem;
 
       @include media(600px) {
-        width: 1.5rem;
+        width: 1rem;
       }
     }
 
@@ -68,20 +67,20 @@
 
     &:before {
       -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
+      transform: rotate(45deg);
       top: 0rem;
     }
 
     &:after {
       -webkit-transform: rotate(135deg);
-              transform: rotate(135deg);
+      transform: rotate(135deg);
       top: 0rem;
     }
   }
 
   &__checkbox:checked ~ &__background {
     -webkit-transform: scale(25);
-            transform: scale(25);
+    transform: scale(25);
     width: 100%;
   }
 
@@ -89,13 +88,13 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background: $primary-color;
     z-index: 30;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 
     display: none;
 
@@ -104,8 +103,8 @@
     }
 
     @include media(600px) {
-      width: 3rem;
-      height: 3rem;
+      width: 2rem;
+      height: 2rem;
     }
   }
 
@@ -116,7 +115,8 @@
   &__navigation {
     background: -webkit-gradient(
       linear,
-      right top, left bottom,
+      right top,
+      left bottom,
       from(rgba($primary-color, 0.9)),
       color-stop(rgba($secondary-color, 0.9)),
       to(rgba($secondary-color-2, 0.9))
@@ -128,7 +128,7 @@
       rgba($secondary-color-2, 0.9)
     );
 
-    @include abs-position(0,0,0,0);
+    @include abs-position(0, 0, 0, 0);
     position: fixed;
     z-index: 20;
     padding: 2rem;
@@ -136,11 +136,11 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     opacity: 0;
     width: 0;
     -webkit-transition: all 0.3s linear;
@@ -161,8 +161,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     margin-bottom: 2rem;
   }
 

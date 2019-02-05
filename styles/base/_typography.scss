@@ -6,8 +6,8 @@ body {
 
 .header-title {
   font-size: $large-heading-font-size;
-  color: $accent-color-3;
   font-weight: bold;
+  color: $accent-color-3;
   // 58px / 20px
   line-height: 2.9rem;
   letter-spacing: 6.7px;
@@ -57,8 +57,8 @@ body {
 
 .heading {
   font-family: $primary-font-family;
-  color: $accent-color;
   font-weight: bold;
+  color: $accent-color;
   // 58px / 20px
   line-height: 2.9rem;
   margin: 0;
@@ -115,11 +115,11 @@ body {
 
 .subtitle {
   font-family: $primary-font-family;
-  color: $accent-color;
   font-size: 1rem;
-  font-weight: 300;
-  margin: 0;
   font-style: italic;
+  font-weight: 300;
+  color: $accent-color;
+  margin: 0;
 
   span {
     font-weight: normal;
@@ -144,8 +144,8 @@ body {
   }
 
   &--accent-2 {
-    color: $accent-color;
     font-weight: bold;
+    color: $accent-color;
   }
 
   &--light {
@@ -170,8 +170,8 @@ body {
 }
 
 .navigation-link {
-  color: $secondary-color-2;
   font-weight: bold;
+  color: $secondary-color-2;
   text-transform: uppercase;
   text-decoration: none;
 

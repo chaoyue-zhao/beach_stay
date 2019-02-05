@@ -1,88 +1,88 @@
 // pseudo elements SASS mixins from https://engageinteractive.co.uk/blog/top-10-scss-mixins
 
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-    content: $content;
-    display: $display;
-    position: $pos;
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
 }
 
 //vertical centing SASS mixins from https://www.developerdrive.com/2018/05/10-best-sass-mixins-for-web-developers/
 
 @mixin vertical-center {
-   position: relative;
-   top: 50%;
-   -ms-transform: translateY(-50%);
-   -webkit-transform: translateY(-50%);
-   transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 //absolute positioning SASS mixins from https://www.developerdrive.com/2018/05/10-best-sass-mixins-for-web-developers/
 
-@mixin abs-position ($top, $right, $bottom, $left) {
-   position: absolute; 
-   top: $top;
-   right: $right;
-   bottom: $bottom;
-   left: $left;
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
 }
 
 @mixin list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @mixin vertical-flex-left {
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @mixin vertical-flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin horizontal-flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin section-style ($background-color) {
-    background: $background-color;
-    padding: 5% 0;
-    margin: 0 auto; 
+@mixin section-style($background-color) {
+  background: $background-color;
+  padding: 5% 0;
+  margin: 0 auto;
 }
 
-@mixin box-shadow ($x, $y) {
-    box-shadow: $x $y $primary-color;
+@mixin box-shadow($x, $y) {
+  box-shadow: $x $y $primary-color;
 }
 
 @mixin outline {
-    transition: all .2s;
-    outline: 20px solid transparent;
-        
-    &:hover {
-        transform: scale(1.2);
-        outline: 20px solid $primary-color;
-    }
+  transition: all 0.2s;
+  outline: 20px solid transparent;
+
+  &:hover {
+    transform: scale(1.2);
+    outline: 20px solid $primary-color;
+  }
 }
 
-@mixin hover ($color){
-    &:hover {
-        color: $color;
-    }
+@mixin hover($color) {
+  &:hover {
+    color: $color;
+  }
 }
 
-// MEDIA QUERIES MIXINS 
+// MEDIA QUERIES MIXINS
 // adopted from this blogpost https://davidwalsh.name/write-media-queries-sass
 
-@mixin media ($screen-size) {
-    @media (max-width: $screen-size) {
-        @content;
-    }
+@mixin media($screen-size) {
+  @media (max-width: $screen-size) {
+    @content;
+  }
 }

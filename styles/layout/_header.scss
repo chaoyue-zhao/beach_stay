@@ -1,70 +1,69 @@
 .header {
-    background: url(../assets/home-image-1.jpg);
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  background: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 100vh;
+  height: 575px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 
-    @include media (1200px) {
-        height: 80vh;
-    }
+  @include media(1200px) {
+    height: 80vh;
+  }
 
-    @include media(1000px) {
-        height: 60vh;
-    }
+  @include media(1000px) {
+    height: 60vh;
+  }
 
-    @include media(700px) {
-        height: 50vh;
-    }
+  @include media(700px) {
+    height: 50vh;
+  }
 }
 .header::before {
-    @include pseudo;
-    background: url(../assets/header-box.jpg);
-    background-size: contain;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    width: 100%;
-    @include abs-position(35%, 50%, -15%, 0);
+  @include pseudo;
+  background: url(../assets/header-box.jpg);
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  @include abs-position(35%, 50%, -15%, 0);
 
-    @include media (1400px) {
-        width: 60%;
-        @include abs-position(30%, 50%, -15%, 0)
-    }
-    @include media (1200px) {
-        width: 50%;
-    }
+  @include media(1400px) {
+    width: 60%;
+    @include abs-position(30%, 50%, -15%, 0);
+  }
+  @include media(1200px) {
+    width: 50%;
+    @include abs-position(20%, 50%, -15%, 0);
+  }
 
-    @include media (1000px) {
-        display: none;
-    }
+  @include media(1000px) {
+    display: none;
+  }
 }
 
 .header-title {
-    margin: auto;  
-    -webkit-transform: translateX(15%);  
-            transform: translateX(15%);
+  margin: auto;
+  -webkit-transform: translateX(15%);
+  transform: translateX(15%);
 
-    @include media (1200px) {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-    }
-    
-    .title {
-        display: block;
-        -webkit-animation: swing 2s ease;
-                animation: swing 2s ease;
-        -webkit-transform-origin: top center;
-                transform-origin: top center;
-        margin-top: $small-margin;
-    }
+  @include media(1200px) {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .title {
+    display: block;
+    -webkit-animation: swing 2s ease;
+    animation: swing 2s ease;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    margin-top: $small-margin;
+  }
 }
-
-
-
