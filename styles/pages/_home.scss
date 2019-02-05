@@ -1,6 +1,10 @@
 .feature .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .feature {
@@ -23,7 +27,9 @@
   &__text-box {
     @include vertical-flex-left;
     padding-right: 10%;
-    flex: 1 1 60%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
 
     @include media(1000px) {
       @include vertical-flex-center;
@@ -36,18 +42,23 @@
   }
 
   &__image-box {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     @include outline;
 
     @include media(1000px) {
-      order: -1;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
       margin-bottom: 2rem;
     }
   }
 
   &__image {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: block;
     @include box-shadow(-20px, 20px);
   }
@@ -80,9 +91,14 @@
   @include section-style($secondary-color-2);
 
   &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     @include list;
   }
 
@@ -121,6 +137,8 @@
   }
 
   &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 45%;
 
@@ -144,7 +162,10 @@
 
   &__container:first-of-type {
     float: right;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin-bottom: -6rem;
     position: relative;
     z-index: 3;
@@ -171,7 +192,10 @@
 
   &__container:last-of-type {
     float: left;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: -6rem;
     
   

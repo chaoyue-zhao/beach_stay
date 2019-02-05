@@ -800,36 +800,6 @@ body {
   top: 0rem;
 }
 
-.mobile-nav__background {
-  position: fixed;
-  top: 1.2rem;
-  right: 1.2rem;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(80, 227, 194, 0.9)), color-stop(rgba(74, 144, 226, 0.9)), to(rgba(250, 255, 254, 0.9)));
-  background: linear-gradient(to left bottom, rgba(80, 227, 194, 0.9), rgba(74, 144, 226, 0.9), rgba(250, 255, 254, 0.9));
-  z-index: 10;
-  -webkit-transition: scale 0.5s linear;
-  transition: scale 0.5s linear;
-  opacity: 0;
-  width: 0;
-}
-
-@media (max-width: 1000px) {
-  .mobile-nav__background {
-    opacity: 1;
-    width: 3rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .mobile-nav__background {
-    top: 1rem;
-    right: 1rem;
-  }
-}
-
 .mobile-nav__checkbox:checked ~ .mobile-nav__background {
   -webkit-transform: scale(25);
           transform: scale(25);
@@ -845,6 +815,8 @@ body {
   border-radius: 50%;
   background: #50e3c2;
   z-index: 30;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
   display: none;
 }
 
@@ -861,12 +833,19 @@ body {
   }
 }
 
+.mobile-nav__checkbox:checked + .mobile-nav__button {
+  right: 45%;
+}
+
 .mobile-nav__navigation {
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(80, 227, 194, 0.9)), color-stop(rgba(74, 144, 226, 0.9)), to(rgba(250, 255, 254, 0.9)));
+  background: linear-gradient(to left bottom, rgba(80, 227, 194, 0.9), rgba(74, 144, 226, 0.9), rgba(250, 255, 254, 0.9));
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   z-index: 20;
   padding: 2rem;
   display: -webkit-box;
@@ -880,8 +859,8 @@ body {
           align-items: center;
   opacity: 0;
   width: 0;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .mobile-nav__checkbox:checked ~ .mobile-nav__navigation {
@@ -1053,7 +1032,8 @@ footer {
 }
 
 .blog-header__title {
-  margin-top: 9rem;
+  margin-top: 20vh;
+  margin-left: 2rem;
 }
 
 main {
@@ -1252,7 +1232,8 @@ main {
 }
 
 .contact-header__title {
-  margin-top: 9rem;
+  margin-top: 20vh;
+  margin-left: 2rem;
 }
 
 @media (max-width: 1000px) {

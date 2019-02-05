@@ -11,7 +11,8 @@
     display: inline-block;
     padding: 0.4rem 0.8rem;
     border: 2px solid transparent;
-    animation: all .2s;
+    -webkit-animation: all .2s;
+            animation: all .2s;
     // width: 12rem;
 
     &:hover,
@@ -19,11 +20,13 @@
         color: $accent-color;
         background: $secondary-color-2;
         border: 2px solid $accent-color;
-        transform: translateY(-2px)
+        -webkit-transform: translateY(-2px);
+                transform: translateY(-2px)
     }
 
     //:active exists in keyboard. 
     &:active {
-        transform: translateY(0px)
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px)
     }
 }
