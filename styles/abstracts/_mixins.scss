@@ -16,10 +16,8 @@
   transform: translateY(-50%);
 }
 
-//absolute positioning SASS mixins from https://www.developerdrive.com/2018/05/10-best-sass-mixins-for-web-developers/
-
-@mixin abs-position($top, $right, $bottom, $left) {
-  position: absolute;
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
   top: $top;
   right: $right;
   bottom: $bottom;
@@ -73,7 +71,7 @@
 }
 
 @mixin hover($color) {
-  &:hover {
+  &:hover, &:focus {
     color: $color;
   }
 }

@@ -1,32 +1,32 @@
 .button {
-    font-family: $secondary-font-family;
-    font-size: 1rem;
-    // 32px / 20px
-    text-align: center;
-    text-decoration: none;
-    line-height: 1.6rem;
-    letter-spacing: 1px;
-    background: $accent-color;
-    color: $secondary-color-2;
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    border: 2px solid transparent;
-    -webkit-animation: all .2s;
-            animation: all .2s;
-    // width: 12rem;
+  font-family: $secondary-font-family;
+  font-size: 1rem;
+  // 32px / 20px
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  background: $accent-color;
+  color: $secondary-color-2;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid transparent;
+  -webkit-animation: all 0.2s;
+  animation: all 0.2s;
+  // width: 12rem;
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-        background: $secondary-color-2;
-        border: 2px solid $accent-color;
-        -webkit-transform: translateY(-2px);
-                transform: translateY(-2px)
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background: $secondary-color-2;
+    border: 2px solid $accent-color;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
 
-    //:active exists in keyboard. 
-    &:active {
-        -webkit-transform: translateY(0px);
-                transform: translateY(0px)
-    }
+  //:active exists in keyboard.
+  &:active {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
 }

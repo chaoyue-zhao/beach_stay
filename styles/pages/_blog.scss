@@ -1,12 +1,25 @@
 .blog-header {
   background: url(../assets/blog-image-1.jpg);
-  height: 65vh;
-  height: 450px;
+  height: 50vh;
+  min-height: 450px;
   background-position: bottom center;
   background-size: cover;
 
+  @include media(1000px) {
+    height: 40vh;
+    min-height: 400px;
+  }
+
   &__title {
-    margin-top: 12%;
+    margin-top: 15%;
+
+    @include media(1000px) {
+      margin-top: 20%;
+    }
+
+    @include media(600px) {
+      margin-top: 30%;
+    }
   }
 }
 
@@ -26,7 +39,7 @@ main {
 
   .article {
     border: 5px solid $primary-color;
-    margin-top: -6.5rem;
+    margin-top: -5%;
     z-index: 10;
 
     &__image {
@@ -97,8 +110,13 @@ main {
     }
   }
 
-  &__title, &__paragraph  {
+  &__title,
+  &__paragraph {
     margin-top: $small-margin;
+  }
+
+  &__paragraph {
+    margin-bottom: $small-margin;
   }
 
   &__button {

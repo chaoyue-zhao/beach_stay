@@ -16,11 +16,10 @@
     padding: 5px;
     width: 45px;
     height: 45px;
-    //wow, this for some reason vertically centered
     line-height: 45px;
     border-radius: 50%;
     text-align: center;
-    @include abs-position(0, 0, 0, -4rem);
+    @include position(absolute, 0, 0, 0, -4rem);
   }
 
   &--2 {
@@ -29,7 +28,7 @@
       width: 3rem;
       height: 3rem;
       line-height: 3rem;
-      @include abs-position(0, 0, 0, -5rem);
+      @include position(absolute, 0, 0, 0, -5rem);
 
       @include media(600px) {
         width: 2rem;

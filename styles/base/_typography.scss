@@ -13,20 +13,20 @@ body {
   letter-spacing: 6.7px;
   text-transform: lowercase;
 
-  @include media (1000px) {
+  @include media(1000px) {
     font-size: $medium-heading-font-size;
     line-height: 2rem;
   }
 
-  @include media (700px) {
+  @include media(700px) {
     line-height: 1.5rem;
   }
 
-  @include media (550px) {
+  @include media(550px) {
     line-height: 1rem;
   }
 
-  @include media (400px) {
+  @include media(400px) {
     line-height: 0.8rem;
   }
 }
@@ -38,19 +38,19 @@ body {
   color: $accent-color;
   text-transform: capitalize;
 
-  @include media (1000px) {
+  @include media(1000px) {
     font-size: 4rem;
   }
 
-  @include media (700px) {
+  @include media(700px) {
     font-size: 3rem;
   }
 
-  @include media (550px) {
+  @include media(550px) {
     font-size: 2rem;
   }
 
-  @include media (400px) {
+  @include media(400px) {
     font-size: 1.5rem;
   }
 }
@@ -71,13 +71,12 @@ body {
   color: $secondary-color-2;
   letter-spacing: 9px;
 
-  @include media (1000px) {
+  @include media(1000px) {
     font-size: 3rem;
     letter-spacing: 5px;
     line-height: 4rem;
-
   }
-   
+
   span {
     text-transform: capitalize;
   }
@@ -94,23 +93,22 @@ body {
 }
 
 .heading-tertiary {
-    // 30px / 20px
-    font-size: 1.5rem;
-    letter-spacing: 3.2px;
+  // 30px / 20px
+  font-size: 1.5rem;
+  letter-spacing: 3.2px;
 
-    &--accent {
+  &--accent {
     color: $accent-color-3;
 
     span {
       text-transform: capitalize;
     }
-    }
+  }
 
-    &--accent-2 {
-      color: $primary-color-2;
-      letter-spacing: 1px;
-    }
-
+  &--accent-2 {
+    color: $primary-color-2;
+    letter-spacing: 1px;
+  }
 }
 
 .subtitle {
@@ -155,7 +153,6 @@ body {
   span {
     text-transform: capitalize;
   }
-
 }
 
 .logo {
@@ -164,7 +161,7 @@ body {
   font-size: 1.73rem;
   color: $primary-color;
 
-  @include media (600px) {
+  @include media(600px) {
     font-size: 1.5rem;
   }
 }
@@ -174,8 +171,4 @@ body {
   color: $secondary-color-2;
   text-transform: uppercase;
   text-decoration: none;
-
-  @include hover ($primary-color);
 }
-
-

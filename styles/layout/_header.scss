@@ -3,10 +3,11 @@
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
-  height: 100vh;
+  width: 100%;
   height: 575px;
   display: -webkit-box;
   display: -ms-flexbox;
+  position: relative;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -32,15 +33,15 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 100%;
-  @include abs-position(35%, 50%, -15%, 0);
+  @include position(absolute, 35%, 50%, -15%, 0);
 
   @include media(1400px) {
     width: 60%;
-    @include abs-position(30%, 50%, -15%, 0);
+    @include position(absolute, 30%, 50%, -15%, 0);
   }
   @include media(1200px) {
     width: 50%;
-    @include abs-position(20%, 50%, -15%, 0);
+    @include position(absolute, 20%, 50%, -15%, 0);
   }
 
   @include media(1000px) {

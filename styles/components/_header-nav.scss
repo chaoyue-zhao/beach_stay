@@ -3,23 +3,22 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-    
+  -ms-flex-align: baseline;
+  align-items: baseline;
 
   &__logo {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 20%;
-            flex: 1 1 20%;
+    -ms-flex: 1 1 20%;
+    flex: 1 1 20%;
   }
 
   &__navigation {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 10%;
-            flex: 1 0 10%;
+    -ms-flex: 1 0 10%;
+    flex: 1 0 10%;
 
     @include media(1000px) {
       display: none;
@@ -32,12 +31,17 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
 
   &__navigation-item {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  &__navigation-link {
+    padding: 1rem;
+    @include hover($primary-color);
   }
 }
