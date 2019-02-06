@@ -1628,6 +1628,7 @@ main {
 @media (max-width: 1000px) {
   .info-card__container {
     width: 90%;
+    margin: 0 5%;
   }
 }
 
